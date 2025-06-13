@@ -48,7 +48,7 @@ export default function ListsScreen() {
         renderItem={({ item }) => (
           <ListItem
             list={item}
-            onPress={() => navigation.navigate('ListDetail', { listId: item.id })}
+            onPress={() => navigation.navigate('ListDetail', { listId:item.id })}
             onEdit={() => handleEditList(item)}
             onDelete={() => handleDeleteList(item.id)}
           />

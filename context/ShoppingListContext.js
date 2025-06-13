@@ -51,7 +51,7 @@ export const ShoppingListProvider = ({ children }) => {
     },
     updateProduct: async (listId, productId, updates) => {
       if (!isDbReady) return;
-      const product = lists.find(l => l.id === listId)?.items.find(p => p.id === productId);
+      const product = lists.find(l => l.id === listId)?.items.find( p => p.id === productId );
       if (!product) return;
       await updateProduct(
         productId,

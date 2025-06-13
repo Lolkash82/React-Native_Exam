@@ -7,7 +7,7 @@ export default function ProductItem({ product, onToggle, onEdit, onDelete }) {
       <TouchableOpacity style={styles.details} onPress={onToggle}>
         <Text style={styles.name}>{product.name}</Text>
         <Text style={styles.quantity}>Кількість: {product.quantity}</Text>
-        <Text style={[styles.status, { color: product.bought ? '#28a745' : '#dc3545' }]}>{product.bought ? 'Куплено' : 'Не куплено'}</Text>
+        <Text style={[styles.status, { color: product.bought ? '#28a745' : '#dc3545' }]}>{product.bought ? 'Куплено' : 'Не куплено'} </Text>
       </TouchableOpacity>
       <View style={styles.buttons}>
         <TouchableOpacity style={styles.editButton} onPress={onEdit}>

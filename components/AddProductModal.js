@@ -31,14 +31,14 @@ export default function AddProductModal({ visible, onClose, onSave, initialProdu
             style={styles.input}
             value={name}
             onChangeText={setName}
-            placeholder="Введіть назву"
+            placeholder="Введіть назву "
           />
           <Text style={styles.label}>Кількість</Text>
           <TextInput
             style={styles.input}
             value={quantity}
             onChangeText={setQuantity}
-            placeholder="Введіть кількість"
+            placeholder="Введіть кількість "
             keyboardType="numeric"
           />
           <View style={styles.buttons}>

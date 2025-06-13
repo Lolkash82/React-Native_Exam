@@ -21,7 +21,7 @@ export default function App() {
             name="ListDetail"
             component={ListDetailScreen}
             options={{ title: 'Деталі списку' }}
-          />
+           />
         </Stack.Navigator>
       </NavigationContainer>
     </ShoppingListProvider>

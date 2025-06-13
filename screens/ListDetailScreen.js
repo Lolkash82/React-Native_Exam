@@ -14,7 +14,7 @@ export default function ListDetailScreen() {
   const [editingProduct, setEditingProduct] = useState(null);
 
   const handleToggleProduct = (productId) => {
-    updateProduct(listId, productId, { bought: !list.items.find(p => p.id === productId).bought });
+    updateProduct(listId, productId, { bought: !list.items.find( p => p.id === productId ).bought });
   };
 
   const handleEditProduct = (product) => {

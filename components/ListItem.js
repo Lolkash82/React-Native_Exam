@@ -6,7 +6,7 @@ export default function ListItem({ list, onPress, onEdit, onDelete }) {
     <TouchableOpacity style={styles.item} onPress={onPress}>
       <View style={styles.details}>
         <Text style={styles.title}>{list.name}</Text>
-        <Text style={styles.count}>Товарів: {list.items.length}, Куплено: {list.items.filter(i => i.bought).length}</Text>
+        <Text style={styles.count}>Товарів: {list.items.length}, Куплено: {list.items.filter(i => i.bought).length} </Text>
       </View>
       <View style={styles.buttons}>
         <TouchableOpacity style={styles.editButton} onPress={onEdit}>

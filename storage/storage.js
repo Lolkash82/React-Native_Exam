@@ -35,7 +35,7 @@ export async function getLists() {
       FROM lists l
     `);
     const detailedLists = await Promise.all(lists.map(async (list) => {
-      const items = await db.getAllAsync('SELECT * FROM products WHERE list_id = ?', [list.id]);
+      const items = await db.getAllAsync('SELECT * FROM products WHERE list_id = ?', [ list.id ]);
       return { ...list, items };
     }));
     return detailedLists;
